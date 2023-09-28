@@ -46,6 +46,7 @@ export default {
     handleChangePWD() {
       this.$router.push("/my/change-password");
     },
+    //退出登录
     handlelogout() {
       this.logout();
       this.$router.push("/login");
