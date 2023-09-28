@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="theme-color" content="#fff" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-touch-fullscreen" content="yes" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="application-name" content="%VITE_APP_TITLE%" />
+  <link rel="apple-touch-icon" href="pwa/apple-icon-180.png" />
+  <link rel="apple-touch-startup-image" href="pwa/apple-splash-2048-2732.jpg"
+    media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" />
+  <link rel="apple-touch-startup-image" href="pwa/apple-splash-2732-2048.jpg"
+    media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)" />
+  <link rel="apple-touch-startup-image" href="pwa/apple-splash-1668-2388.jpg"
+    media="(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" />
+  <link rel="apple-touch-startup-image" href="pwa/apple-splash-2388-1668.jpg"
+    media="(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)" />
+  <link rel="apple-touch-startup-image" href="pwa/apple-splash-1536-2048.jpg"
+    media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" />
+  <link rel="apple-touch-startup-image" href="pwa/apple-splash-2048-1536.jpg"
+    media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)" />
+  <link rel="apple-touch-startup-image" href="pwa/apple-splash-1668-2224.jpg"
+    media="(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" />
+  <link rel="apple-touch-startup-image" href="pwa/apple-splash-2224-1668.jpg"
+    media="(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)" />
+  <link rel="apple-touch-startup-image" href="pwa/apple-splash-1620-2160.jpg"
+    media="(device-width: 810px) and (device-height: 1080px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" />
+  <link rel="apple-touch-startup-image" href="pwa/apple-splash-2160-1620.jpg"
+    media="(device-width: 810px) and (device-height: 1080px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)" />
+  <link rel="apple-touch-startup-image" href="pwa/apple-splash-1290-2796.jpg"
+    media="(device-width: 430px) and (device-height: 932px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" />
+  <link rel="apple-touch-startup-image" href="pwa/apple-splash-2796-1290.jpg"
+    media="(device-width: 430px) and (device-height: 932px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)" />
+  <link rel="apple-touch-startup-image" href="pwa/apple-splash-1179-2556.jpg"
+    media="(device-width: 393px) and (device-height: 852px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" />
+  <link rel="apple-touch-startup-image" href="pwa/apple-splash-2556-1179.jpg"
+    media="(device-width: 393px) and (device-height: 852px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)" />
+  <link rel="apple-touch-startup-image" href="pwa/apple-splash-1284-2778.jpg"
+    media="(device-width: 428px) and (device-height: 926px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" />
+  <link rel="apple-touch-startup-image" href="pwa/apple-splash-2778-1284.jpg"
+    media="(device-width: 428px) and (device-height: 926px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)" />
+  <link rel="apple-touch-startup-image" href="pwa/apple-splash-1170-2532.jpg" media="(device-
+    width: 390px) and (device-height: 844px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" />
+  <link rel="apple-touch-startup-image" href="pwa/apple-splash-2532-1170.jpg" media="(device-
+  width: 390px) and (device-height: 844px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)" />
+  <link rel="apple-touch-startup-image" href="pwa/apple-splash-1125-2436.jpg" media="(device-
+  width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" />
+  <link rel="apple-touch-startup-image" href="pwa/apple-splash-2436-1125.jpg" media="(device-
+  width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)" />
+  <link rel="apple-touch-startup-image" href="pwa/apple-splash-1242-2688.jpg" media="(device-
+  width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" />
+  <link rel="apple-touch-startup-image" href="pwa/apple-splash-2688-1242.jpg" media="(device-
+  width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)" />
+  <link rel="apple-touch-startup-image" href="pwa/apple-splash-828-1792.jpg" media="(device-w
+  idth: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" />
+  <link rel="apple-touch-startup-image" href="pwa/apple-splash-1792-828.jpg" media="(device-w
+  idth: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)" />
+  <link rel="apple-touch-startup-image" href="pwa/apple-splash-1242-2208.jpg" media="(device-
+  width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" />
+  <link rel="apple-touch-startup-image" href="pwa/apple-splash-2208-1242.jpg" media="(device-
+  width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)" />
+  <link rel="apple-touch-startup-image" href="pwa/apple-splash-750-1334.jpg" media="(device-w
+  idth: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" />
+  <link rel="apple-touch-startup-image" href="pwa/apple-splash-1334-750.jpg" media="(device-w
+  idth: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)" />
+  <link rel="apple-touch-startup-image" href="pwa/apple-splash-640-1136.jpg" media="(device-w
+  idth: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" />
+  <link rel="apple-touch-startup-image" href="pwa/apple-splash-1136-640.jpg" media="(device-w
+  idth: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)" />
+  <link rel="icon" type="image/png" href="pwa/apple-icon-180.png" />
+  <title>%VITE_APP_TITLE%</title>
+</head>
+
+<body>
+  <noscript>
+    <strong>We're sorry but %VITE_APP_TITLE% doesn't work properly without JavaScript enabled. Please enable it to
+      continue.</strong>
+  </noscript>
+
+  <div id="app">
+    <div class="app-loading">
+      <div class="app-loading__logo">
+        <img src="pwa/apple-icon-180.png" />
+      </div>
+      <div class="app-loading__loader"></div>
+      <div class="app-loading__title">
+        %VITE_APP_TITLE%
+      </div>
+    </div>
+    <style>
+      noscript {
+        position: absolute;
+        z-index: 1;
+      }
+
+      .app-loading {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        bottom: 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background: #fff;
+      }
+
+      .app-loading__logo {
+        margin-bottom: 30px;
+      }
+
+      .app-loading__logo img {
+        width: 90px;
+        vertical-align: bottom;
+      }
+
+      .app-loading__loader {
+        box-sizing: border-box;
+        width: 35px;
+        height: 35px;
+        border: 5px solid transparent;
+        border-top-color: #000;
+        border-radius: 50%;
+        animation: .5s loader linear infinite;
+        position: relative;
+      }
+
+      .app-loading__loader:before {
+        box-sizing: border-box;
+        content: '';
+        display: block;
+        width: inherit;
+        height: inherit;
+        position: absolute;
+        top: -5px;
+        left: -5px;
+        border: 5px solid #ccc;
+        border-radius: 50%;
+        opacity: .5;
+      }
+
+      .app-loading__title {
+        font-size: 24px;
+        color: #333;
+        margin-top: 30px;
+      }
+
+      .dark .app-loading {
+        background: #222225;
+      }
+
+      .dark .app-loading__loader {
+        border-top-color: #fff;
+      }
+
+      .dark .app-loading__title {
+        color: #d0d0d0;
+      }
+
+      @keyframes loader {
+        0% {
+          transform: rotate(0deg);
+        }
+
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+    </style>
+  </div>
+  <div id="versionCheck"
+    style="display: none;position: absolute;z-index: 99;top:0;left:0;right:0;bottom:0;padding:40px;background:rgba(255,255,255,0.9);color: #333;">
+    <h2 style="line-height: 1;margin: 0;font-size: 24px;">当前使用的浏览器内核版本过低 :(</h2>
+    <p style="line-height: 1;margin: 0;font-size: 14px;margin-top: 20px;opacity: 0.8;">当前版本：<span
+        id="versionCheck-type">--</span> <span id="versionCheck-version">--</span></p>
+    <p style="line-height: 1;margin: 0;font-size: 14px;margin-top: 10px;opacity: 0.8;">最低版本要求：Chrome 71+、Firefox
+      65+、Safari 12+、Edge 97+。</p>
+    <p style="line-height: 1;margin: 0;font-size: 14px;margin-top: 10px;opacity: 0.8;">
+      请升级浏览器版本，或更换现代浏览器，如果你使用的是双核浏览器,请切换到极速/高速模式。</p>
+  </div>
+  <script type="text/javascript">
+    function getBrowerInfo() {
+      var userAgent = window.navigator.userAgent;
+      var browerInfo = {
+        type: 'unknown',
+        version: 'unknown',
+        userAgent: userAgent
+      };
+      if (document.documentMode) {
+        browerInfo.type = "IE"
+        browerInfo.version = document.documentMode + ''
+      } else if (indexOf(userAgent, "Firefox")) {
+        browerInfo.type = "Firefox"
+        browerInfo.version = userAgent.match(/Firefox\/([\d.]+)/)[1]
+      } else if (indexOf(userAgent, "Opera")) {
+        browerInfo.type = "Opera"
+        browerInfo.version = userAgent.match(/Opera\/([\d.]+)/)[1]
+      } else if (indexOf(userAgent, "Edg")) {
+        browerInfo.type = "Edg"
+        browerInfo.version = userAgent.match(/Edg\/([\d.]+)/)[1]
+      } else if (indexOf(userAgent, "Chrome")) {
+        browerInfo.type = "Chrome"
+        browerInfo.version = userAgent.match(/Chrome\/([\d.]+)/)[1]
+      } else if (indexOf(userAgent, "Safari")) {
+        browerInfo.type = "Safari"
+        browerInfo.version = userAgent.match(/Safari\/([\d.]+)/)[1]
+      } else if (indexOf(userAgent, "MicroMessenger")) {
+        browerInfo.type = "MicroMessenger"
+        browerInfo.version = userAgent.match(/MicroMessenger\/([\d.]+)/)[1]
+      }
+      return browerInfo
+    }
+    function indexOf(userAgent, brower) {
+      return userAgent.indexOf(brower) > -1
+    }
+    function isSatisfyBrower() {
+      var minVer = {
+        "Chrome": 71,
+        "Opera": 71,
+        "Firefox": 65,
+        "Safari": 12,
+        "Edg": 97,
+        "IE": 999,
+        "MicroMessenger": 7
+      }
+      var browerInfo = getBrowerInfo()
+      var materVer = browerInfo.version.split('.')[0]
+      return materVer >= minVer[browerInfo.type]
+    }
+    if (!isSatisfyBrower()) {
+      document.getElementById('versionCheck').style.display = 'block';
+      document.getElementById('versionCheck-type').innerHTML = getBrowerInfo().type;
+      document.getElementById('versionCheck-version').innerHTML = getBrowerInfo().version;
+    }
+  </script>
+  <script type="module" src="/src/main.js"></script>
+</body>
+
+</html>
