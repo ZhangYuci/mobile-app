@@ -5,7 +5,7 @@
 }
 
 body {
-  background-color: #f7f8fa;
+  background-color: #f6f6f6;
 }
 
 #app {
@@ -39,4 +39,18 @@ body {
   .block-button-container-lr {
     margin: 0px 12px 10px 12px;
   }
+}
+
+:root:root {
+  --app-default-theme-color: #3476cc;
+  --van-nav-bar-background: var(--app-default-theme-color);
+  --van-nav-bar-text-color: #fff;
+  --van-nav-bar-icon-color: #fff;
+  --van-nav-bar-title-text-color: #fff;
+  --van-nav-bar-title-font-size: 18px;
+  --van-button-primary-background: var(--app-default-theme-color);
+  --van-button-primary-border-color: var(--app-default-theme-color);
+  --van-tabbar-item-active-color: var(--app-default-theme-color);
+  --van-dropdown-menu-title-active-text-color: var(--app-default-theme-color);
+  --van-dropdown-menu-option-active-color: var(--app-default-theme-color);
 }
